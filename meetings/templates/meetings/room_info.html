@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}{{ room.name }}{% endblock %}
+
+{% block content %}
+        <a href = "{% url 'rooms' %}">Back</a>
+        <h1>Information for The {{ name }}</h1>
+        <p>The room is located on Floor {{ floor }} and in Room {{ room }}</p>
+        <a href = "{% url 'welcome' %}">Home</a>
+{% endblock %}
